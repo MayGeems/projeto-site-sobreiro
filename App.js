@@ -10,6 +10,7 @@ app.use(express.static(__dirname));
 app.use(express.json());
 app.use(cors());
 
+
 async function cadastrarPedido() {
     const pedido = {
     cliente_nome: document.getElementById('nome').value,
@@ -22,7 +23,7 @@ async function cadastrarPedido() {
     entrega_data_horario: document.getElementById('data').value
     };
     try {
-        const response = await fetch('http://172.26.3.157:3000/pedidos/cadastrar', {
+        const response = await fetch('http://'+ipDoServidor+':'+porta+'/pedidos/cadastrar', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
