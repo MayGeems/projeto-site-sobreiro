@@ -1,0 +1,20 @@
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Diretórios de dependências
+node_modules/
+jspm_packages/
+
+# Arquivos de ambiente
+.env
+.env.local
+
+# IDEs
+.vscode/
+.idea/
