@@ -105,8 +105,6 @@ app.get('/decoracao', async (req, res) => {
     }
 });
 
-
-
 app.listen(porta, ipDoServidor, function(){
     console.log('\n Aplicacao web executando em http://'+ipDoServidor+':'+porta);
 });

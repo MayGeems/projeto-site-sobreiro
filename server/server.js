@@ -6,8 +6,6 @@ require('dotenv').config();
 app.use(cors());
 app.use(express.json());
 
-console.log(process.env.API_KEY);
-
 const { MercadoPagoConfig, Preference } = require('mercadopago');
 
 // Inicialização do Mercado Pago com as suas credenciais
