@@ -10,12 +10,15 @@
 
 ## Informações Gerais
 O projeto foi desenvolvido juntamente a disciplina de Computação Aplicada VI, onde tivemos como objetivo estruturar e desenvolver um site que realizasse a integração com o sistema de registro de pedidos da Sobreiro Vinos y Regalos. 
+
 **Data de início**: 02/04/26
+
 **Responsáveis**: 
 - Pedro Braga;
 - Mayra dos Santos;
 - Lucas Grandini.
 ## Funcionalidades
-O site foi projetado para permitir que clientes montem cestas de presentes no estilo e-commerce. Ao montar o pedido, o cliente pode fornecer poderá calcular o total do pedido, taxas de envio e realizar pagamento via Mercado Pago.enter code here
+O site foi projetado para permitir que clientes montem cestas de presentes no estilo e-commerce. Ao montar o pedido, o cliente pode fornecer poderá calcular o total do pedido, taxas de envio e realizar pagamento via Mercado Pago.
+
 ![Mercado Pago](https://img.shields.io/badge/Mercado%20Pago-00AEEF?style=for-the-badge&logo=mercadopago&logoColor=white)
 ![Melhor Envio](https://img.shields.io/badge/Melhor%20Envio-FF6B00?style=for-the-badge&logoColor=white)
