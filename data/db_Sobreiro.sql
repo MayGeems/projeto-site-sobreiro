@@ -20,8 +20,9 @@ CREATE TABLE produtos (
   preco NUMERIC(10,2) NOT NULL,
   categoria VARCHAR(30) NOT NULL,
   foto VARCHAR(255),-- nome do arquivo de imagem ex.: bombom02.png
-  comprimento NUMERIC(5,2) NOT NULL --EM CENTÍMETROS
-  ,largura NUMERIC (5,2) NOT NULL,
+  comprimento NUMERIC(5,2) NOT NULL, --EM CENTÍMETROS
+  altura NUMERIC (5,2) NOT NULL,
+  largura NUMERIC (5,2) NOT NULL,
   volume NUMERIC(6,3)
 );
 

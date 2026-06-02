@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Carrinho</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Seu Carrinho</h1>
+
+        <div id="listaCarrinho"></div>
+        <div class="frete-box">
+
+            <h2>Calcular Frete</h2>
+
+            <div class="frete-inputs">
+                <input type="text" id="cep" placeholder="Digite seu CEP">
+
+                <button id="btnFrete">
+                    Calcular
+                </button>
+            </div>
+
+            <p id="resultadoFrete"></p>
+
+        </div>
+        <div class="formulario-pedido">
+
+            <h2>Dados do Cliente</h2>
+
+            <input type="text"
+                id="clienteNome"
+                placeholder="Nome completo">
+
+            <input type="text"
+                id="clienteCpf"
+                placeholder="CPF ou CNPJ">
+
+            <input type="text"
+                id="clienteTelefone"
+                placeholder="Telefone">
+
+            <h2>Entrega</h2>
+
+            <input type="text"
+                id="destinatarioNome"
+                placeholder="Nome do destinatário">
+
+            <input type="text"
+                id="destinatarioEndereco"
+                placeholder="Endereço completo">
+
+            <input type="datetime-local"
+                id="dataEntrega">
+
+        </div>
+        <div class="resumo">
+            <p id="totalItens">Itens: 0</p>
+            <p id="valorTotal">Total: R$ 0,00</p>
+
+            <button class="btn-finalizar">Finalizar Compra</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

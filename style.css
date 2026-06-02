@@ -1,0 +1,622 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body{
+    font-family: Georgia, serif;
+    background:#FFF9F7;
+    color:#0D0630;
+}
+
+/* =========================
+   TOPO
+========================= */
+
+.topo{
+    width:100%;
+    height:85px;
+    background:#416847;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 60px;
+}
+
+.logo{
+    color:#FFF9F7;
+    font-size:34px;
+    letter-spacing:3px;
+}
+
+.icones{
+    display:flex;
+    gap:20px;
+}
+
+.icones i{
+    color:white;
+    font-size:20px;
+    cursor:pointer;
+}
+
+/* =========================
+   BANNER
+========================= */
+
+.banner{
+    width:100%;
+    height:420px;
+
+    background-image:
+    linear-gradient(rgba(143,40,77,.65),
+    rgba(143,40,77,.65)),
+    url("banner.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.banner-conteudo{
+    text-align:center;
+    color:white;
+}
+
+.banner-conteudo h2{
+    font-size:55px;
+    font-weight:normal;
+    line-height:70px;
+}
+
+.banner-conteudo span{
+    color:#FFBC2C;
+    font-size:95px;
+    font-weight:bold;
+}
+
+.banner-conteudo p{
+    margin-top:15px;
+    font-size:24px;
+}
+
+/* =========================
+   MENU
+========================= */
+
+.menu{
+    background:#8F284D;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:50px;
+
+    padding:18px;
+
+    flex-wrap:wrap;
+}
+
+.menu button{
+    background:none;
+    border:none;
+
+    color:white;
+    font-size:14px;
+    letter-spacing:1px;
+
+    cursor:pointer;
+    transition:.3s;
+}
+
+.menu button:hover{
+    color:#FFBC2C;
+}
+
+/* =========================
+   BUSCA
+========================= */
+
+.busca{
+    width:100%;
+
+    display:flex;
+    justify-content:center;
+
+    padding:35px 20px;
+}
+
+.busca-box{
+    width:100%;
+    max-width:900px;
+
+    background:white;
+
+    border:2px solid #ddd;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:15px 20px;
+}
+
+.busca-box input{
+    width:100%;
+
+    border:none;
+    outline:none;
+
+    font-size:16px;
+    background:none;
+    color:#0D0630;
+}
+
+.busca-box i{
+    font-size:20px;
+    color:#0D0630;
+}
+
+/* =========================
+   PRODUTOS
+========================= */
+
+.areaProdutos{
+    width:100%;
+    max-width:1400px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(240px,1fr));
+
+    gap:35px;
+
+    padding:40px;
+}
+
+.card{
+    background:#F7F3F2;
+
+    padding:20px;
+
+    text-align:center;
+
+    transition:.3s;
+
+    border-radius:5px;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.10);
+}
+
+.card-imagem{
+    width:100%;
+    height:250px;
+
+    background:#f7efd8;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin-bottom:18px;
+}
+
+.card img{
+    height:210px;
+    object-fit:contain;
+}
+
+.card h3{
+    font-size:15px;
+    color:#0D0630;
+
+    min-height:45px;
+
+    margin-bottom:15px;
+}
+
+.preco{
+    color:#8F284D;
+
+    font-size:38px;
+    font-weight:bold;
+
+    margin-bottom:15px;
+}
+
+/* =========================
+   CONTADOR
+========================= */
+
+.contador{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+}
+
+.contador button{
+    width:28px;
+    height:28px;
+
+    border:none;
+
+    background:#416847;
+    color:white;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    border-radius:3px;
+}
+
+.quantidade{
+    width:40px;
+    height:30px;
+
+    border:1px solid #ccc;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:white;
+}
+
+/* =========================
+   CARRINHO
+========================= */
+
+.container{
+    width:100%;
+    max-width:900px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.container h1{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:35px;
+    color:#8F284D;
+    font-weight:normal;
+    letter-spacing:2px;
+}
+
+.item{
+    background:#F7F3F2;
+
+    padding:20px;
+    margin-bottom:20px;
+
+    border-radius:10px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    transition:.3s;
+
+    border:1px solid #eee;
+}
+
+.item:hover{
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.08);
+}
+
+.resumo{
+    background:#F7F3F2;
+
+    padding:25px;
+
+    border-radius:10px;
+
+    margin-top:30px;
+
+    border:1px solid #eee;
+
+    box-shadow:
+    0 4px 12px rgba(0,0,0,.05);
+}
+
+.resumo p{
+    font-size:18px;
+    margin-bottom:12px;
+    color:#0D0630;
+}
+
+.btn-finalizar{
+    width:100%;
+
+    padding:16px;
+
+    margin-top:15px;
+
+    border:none;
+
+    background:#416847;
+    color:white;
+
+    font-size:16px;
+    letter-spacing:1px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.btn-finalizar:hover{
+    background:#8F284D;
+}
+
+/* =========================
+   FINALIZAR
+========================= */
+
+.finalizar{
+    display:none;
+    justify-content:center;
+    margin:30px 0;
+}
+
+#btnFinalizar{
+    padding:15px 40px;
+    border:none;
+    background:#1d1d1d;
+    color:white;
+    font-size:16px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+/* =========================
+   RODAPÉ
+========================= */
+
+.rodape{
+    margin-top:80px;
+
+    background:#416847;
+
+    padding:50px 20px;
+
+    text-align:center;
+
+    color:white;
+}
+
+.rodape h2{
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+.redes{
+    margin-top:20px;
+
+    display:flex;
+    justify-content:center;
+    gap:25px;
+}
+
+.redes i{
+    font-size:24px;
+    cursor:pointer;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media(max-width:900px){
+
+    .banner{
+        height:320px;
+    }
+
+    .banner-conteudo h2{
+        font-size:40px;
+        line-height:50px;
+    }
+
+    .banner-conteudo span{
+        font-size:65px;
+    }
+
+    .banner-conteudo p{
+        font-size:18px;
+    }
+
+    .menu{
+        gap:20px;
+    }
+
+    .areaProdutos{
+        grid-template-columns:
+        repeat(auto-fit,minmax(180px,1fr));
+
+        padding:20px;
+    }
+
+    .card img{
+        height:170px;
+    }
+
+    .preco{
+        font-size:28px;
+    }
+}
+
+@media(max-width:700px){
+
+    .container h1{
+        font-size:30px;
+    }
+
+    .item{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:10px;
+    }
+
+    .resumo p{
+        font-size:16px;
+    }
+
+    .btn-finalizar{
+        font-size:15px;
+        padding:14px;
+    }
+}
+
+@media(max-width:600px){
+
+    .topo{
+        padding:0 20px;
+    }
+
+    .logo{
+        font-size:28px;
+    }
+
+    .banner{
+        height:260px;
+    }
+
+    .banner-conteudo h2{
+        font-size:28px;
+        line-height:40px;
+    }
+
+    .banner-conteudo span{
+        font-size:48px;
+    }
+
+    .menu{
+        gap:12px;
+        padding:12px;
+    }
+
+    .menu button{
+        font-size:11px;
+    }
+
+    .busca-box{
+        padding:12px;
+    }
+
+    .areaProdutos{
+        grid-template-columns:1fr 1fr;
+        gap:15px;
+    }
+
+    .card{
+        padding:12px;
+    }
+
+    .card-imagem{
+        height:160px;
+    }
+
+    .card img{
+        height:130px;
+    }
+
+    .preco{
+        font-size:22px;
+    }
+    /* =========================
+   FRETE
+========================= */
+
+.frete-box{
+    background:#F7F3F2;
+    padding:25px;
+    border-radius:10px;
+    margin-top:25px;
+    border:1px solid #eee;
+}
+
+.frete-box h2{
+    margin-bottom:15px;
+    color:#8F284D;
+    font-weight:normal;
+}
+
+.frete-inputs{
+    display:flex;
+    gap:10px;
+}
+
+.frete-inputs input{
+    flex:1;
+    padding:14px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    outline:none;
+}
+
+.frete-inputs button{
+    padding:14px 20px;
+    border:none;
+    background:#416847;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+#resultadoFrete{
+    margin-top:15px;
+    font-size:16px;
+    color:#0D0630;
+}
+}
+.formulario-pedido{
+    background:#F7F3F2;
+    padding:25px;
+    border-radius:10px;
+    margin-top:25px;
+    border:1px solid #eee;
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.formulario-pedido h2{
+    color:#8F284D;
+    font-weight:normal;
+    margin-top:10px;
+}
+
+.formulario-pedido input{
+    padding:14px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    outline:none;
+    font-size:15px;
+}
