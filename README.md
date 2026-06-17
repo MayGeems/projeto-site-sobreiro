@@ -18,7 +18,11 @@ O projeto foi desenvolvido juntamente a disciplina de Computação Aplicada VI, 
 - Mayra dos Santos;
 - Lucas Grandini.
 ## Funcionalidades
-O site foi projetado para permitir que clientes montem cestas de presentes no estilo e-commerce. Ao montar o pedido, o cliente pode fornecer poderá calcular o total do pedido, taxas de envio e realizar pagamento via Mercado Pago.
+O site foi projetado para permitir que clientes montem cestas de presentes no estilo e-commerce. Ao montar o pedido, o cliente poderá calcular o total do pedido, taxas de envio e realizar pagamento via Mercado Pago.
 
+## APIs
 ![Mercado Pago](https://img.shields.io/badge/Mercado%20Pago-00AEEF?style=for-the-badge&logo=mercadopago&logoColor=white)
 ![Melhor Envio](https://img.shields.io/badge/Melhor%20Envio-FF6B00?style=for-the-badge&logoColor=white)
+As APIs utilizadas na elaboração do projeto foram:
+- **Mercado Pago**, onde homologamos e simulamos transações de pagamento via cartão, Pix e Boletos;
+- **Melhor Envio**, uma alternativa sandbox para o cálculo de frete.
