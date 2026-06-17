@@ -23,6 +23,7 @@ O site foi projetado para permitir que clientes montem cestas de presentes no es
 ## APIs
 ![Mercado Pago](https://img.shields.io/badge/Mercado%20Pago-00AEEF?style=for-the-badge&logo=mercadopago&logoColor=white)
 ![Melhor Envio](https://img.shields.io/badge/Melhor%20Envio-FF6B00?style=for-the-badge&logoColor=white)
+
 As APIs utilizadas na elaboração do projeto foram:
 - **Mercado Pago**, onde homologamos e simulamos transações de pagamento via cartão, Pix e Boletos;
 - **Melhor Envio**, uma alternativa sandbox para o cálculo de frete.
