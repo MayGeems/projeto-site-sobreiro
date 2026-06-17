@@ -24,6 +24,7 @@ CREATE TABLE produtos (
   altura NUMERIC (5,2) NOT NULL,
   largura NUMERIC (5,2) NOT NULL,
   volume NUMERIC(6,3)
+  peso NUMERIC
 );
 
 CREATE OR REPLACE FUNCTION calcular_volume()
